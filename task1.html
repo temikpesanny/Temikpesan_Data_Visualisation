@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Integration</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; max-width: 600px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 180px; font-weight: bold; }
+        input, select { padding: 5px; width: 200px; }
+        button { padding: 8px 16px; font-weight: bold; cursor: pointer; }
+        .results { margin-top: 20px; padding: 15px; background-color: #f4f4f4; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Numerical Integration Calculator</h2>
+    
+    <div class="form-group">
+        <label for="funcSelect">Select Function:</label>
+        <select id="funcSelect">
+            <option value="sin">f(x) = sin(x)</option>
+            <option value="x2">f(x) = x²</option>
+            <option value="exp">f(x) = e^x</option>
+            <option value="poly">f(x) = 3x³ - 2x + 5</option>
+        </select>
+    </div>
 
+    <div class="form-group">
+        <label for="intervalA">Lower Limit (a):</label>
+        <input type="number" id="intervalA" value="0" step="any">
+    </div>
+
+    <div class="form-group">
+        <label for="intervalB">Upper Limit (b):</label>
+        <input type="number" id="intervalB" value="3.14159265" step="any">
+    </div>
+
+    <div class="form-group">
+        <label for="numIntervals">Subintervals (n):</label>
+        <input type="number" id="numIntervals" value="10" min="2" step="2">
+    </div>
+
+    <div class="form-group">
+        <label for="tolerance">Desired Tolerance (ε):</label>
+        <input type="number" id="tolerance" value="0.00001" step="any">
+    </div>
+
+    <button onclick="calculateIntegration()">Calculate</button>
+
+    <div id="results" class="results">
+        <p>Select inputs and click Calculate to view results.</p>
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>

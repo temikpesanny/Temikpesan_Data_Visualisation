@@ -1,1 +1,13 @@
+{
+  "name": "online_shop_cart",
+  "version": "1.0.0",
+  "description": "Task 2 - Online shop application with cart component",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^8.3.2"
+  }
+}
 

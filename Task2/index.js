@@ -10,7 +10,7 @@ function setup() {
     }
 }
 
-// Ensure the page layouts completely load before running DOM modification
+// Ensure the page layouts completely load before running DOM modifications
 document.addEventListener("DOMContentLoaded", setup);
 
 // Generates product cards inside the catalog panel layout grid
